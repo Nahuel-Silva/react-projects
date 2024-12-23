@@ -4,6 +4,12 @@ const FollowMouse = () => {
   const [enabled, setEnabled] = useState(false)
   const [position, setPosition] = useState({ x: 0, y: 0 })
 
+
+  // useEffect siempre en el cuerpo del componente
+  // Se puede hacer logica dentro pero siempre dentro del useEffect
+
+
+
   // pointer move
   useEffect(() => {
     console.log('effect ', { enabled })
